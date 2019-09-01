@@ -1,0 +1,4 @@
+gan.rtorch.Rproj
+^.*\.Rproj$
+^\.Rproj\.user$
+.idea/
