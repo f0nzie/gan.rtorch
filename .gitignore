@@ -7,3 +7,5 @@ inst/doc
 inst/python/gan/.idea/
 
 *.pyc
+
+man/
