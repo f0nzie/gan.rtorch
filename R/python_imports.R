@@ -1,4 +1,5 @@
-
+#' A dummy function to test import from inst/python
+#' No argument necessary
 #' @importFrom reticulate import_from_path
 #' @export
 gan_dummy <- function() {
@@ -7,7 +8,9 @@ gan_dummy <- function() {
     gan$gan_functions$dummy()
 }
 
-
+#' The fivenum function from R
+#' It works the same as in R. Applies to vectors and matrices.
+#' @param arr this could an array, matrix or vector
 #' @importFrom reticulate import_from_path
 #' @export
 py_fivenum <- function(arr) {
@@ -17,7 +20,8 @@ py_fivenum <- function(arr) {
     gan$py_functions$fivenum(arr)
 }
 
-
+#' Test the train funcion in the GAN
+#' No parameters necessary
 #' @importFrom reticulate import_from_path
 #' @export
 gan_train <- function() {
