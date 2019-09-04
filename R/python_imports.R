@@ -23,5 +23,5 @@ py_fivenum <- function(arr) {
 gan_train <- function() {
     python_path <- system.file("python", package = "gan.rtorch")
     gan <- import_from_path("gan", path = python_path)
-    gan$gan_pytorch$train()
+    gan$gan_nplot$train()
 }
