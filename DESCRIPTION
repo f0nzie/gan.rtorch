@@ -5,7 +5,8 @@ Version: 0.1
 Date: 2019-08-31
 Author: msfz751
 Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
+Description: This is a sub-package for project gan-rsuite. This provide the 
+    bindings for the Python version of the GAN.
 License: GPL-2
 Imports: logging,
     methods,
