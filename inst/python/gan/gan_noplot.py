@@ -104,7 +104,7 @@ def decorate_with_diffs(data, exponent, remove_raw_data=False):
         return torch.cat([data, diffs], 1)
 
 
-def train():
+def train(epochs):
     # Model parameters
     g_input_size = 1      # Random noise dimension coming into generator, per output vector
     g_hidden_size = 5     # Generator complexity
@@ -118,7 +118,7 @@ def train():
     g_learning_rate = 1e-3
     sgd_momentum = 0.9
 
-    num_epochs = 1350
+    num_epochs = epochs
     print_interval = 100
     d_steps = 20
     g_steps = 20
@@ -187,12 +187,12 @@ def train():
     return values
 
 
-# produce a certain number of sample distributions
-n_samples = 10
-for s in range(n_samples):
-    print("Run: ", s)
-    train()
-
-
-elapsed = time.time() - t
-print("Elapsed time", elapsed)
+# # produce a certain number of sample distributions
+# n_samples = 10
+# for s in range(n_samples):
+#     print("Run: ", s)
+#     train()
+# 
+# 
+# elapsed = time.time() - t
+# print("Elapsed time", elapsed)

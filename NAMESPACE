@@ -25,3 +25,5 @@ importFrom(reticulate,py_run_string)
 importFrom(reticulate,py_to_r)
 importFrom(reticulate,r_to_py)
 importFrom(reticulate,tuple)
+
+import(logging)
