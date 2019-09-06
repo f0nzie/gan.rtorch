@@ -22,10 +22,11 @@ py_fivenum <- function(arr) {
 
 #' Test the train funcion in the GAN
 #' No parameters necessary
+#' @param epochs number of epochs
 #' @importFrom reticulate import_from_path
 #' @export
-gan_train <- function() {
+gan_train <- function(epochs = 500) {
     python_path <- system.file("python", package = "gan.rtorch")
     gan <- import_from_path("gan", path = python_path)
-    gan$gan_nplot$train()
+    gan$gan_noplot$train(as.integer(epochs))
 }
